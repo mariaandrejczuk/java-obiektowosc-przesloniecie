@@ -8,7 +8,9 @@ public class Bear extends Toy {
         this.material = material;
     }
 
-    public String getMaterial() {
-        return material;
+
+    public void display() {
+        super.display(); //to mi wywołuje metodę display z Toys.java, super. omija przysłonięcie
+        System.out.println("Material: "+material);
     }
 }

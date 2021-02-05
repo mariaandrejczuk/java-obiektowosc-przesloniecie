@@ -8,4 +8,9 @@ public class ToyShop {  //miejsce do przechowywania wszystkich zabawek
             bears[indexBear++] = bear;
         }
     }
+    public void displayAll(){
+        for (int i = 0; i < indexBear; i++) {
+            bears[i].display();
+        }
+    }
 }

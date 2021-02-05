@@ -7,7 +7,4 @@ public class Car extends Toy {
         this.type = type;
     }
 
-    public String getType() {
-        return type;
-    }
 }

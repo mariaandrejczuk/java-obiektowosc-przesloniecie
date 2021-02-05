@@ -36,8 +36,11 @@ public class ToyShopApp {
                     toyShop.addBear(bear);
                     break;
                 case 2:
+
+
                     break;
                 case 3:
+                    toyShop.displayAll();
                     break;
             }
         } while (option != 0);
