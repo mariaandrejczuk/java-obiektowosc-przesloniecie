@@ -5,6 +5,10 @@ public class ToyShopApp {
 
         Scanner scanner = new Scanner(System.in, "UTF-8");
         int option;
+        String name;
+        double price;
+        ToyShop toyShop = new ToyShop();
+
         do {
             System.out.println("-------------Toy Shop-----------");
             System.out.println("1 - add bear");
@@ -18,6 +22,18 @@ public class ToyShopApp {
 
             switch (option) {
                 case 1:
+                    System.out.println("Name: ");
+                    name = scanner.nextLine();
+
+                    System.out.println("Price: ");
+                    price = scanner.nextDouble();
+                    scanner.nextLine(); // przechwyca znak nowej linii \n
+
+                    System.out.println("Material: ");
+                    String material = scanner.nextLine();
+
+                    Bear bear = new Bear(name, price, material);  //tworzę obiekt Miś
+                    toyShop.addBear(bear);
                     break;
                 case 2:
                     break;
