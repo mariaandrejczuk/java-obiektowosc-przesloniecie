@@ -34,9 +34,22 @@ public class ToyShopApp {
 
                     Bear bear = new Bear(name, price, material);  //tworzę obiekt Miś
                     toyShop.addBear(bear);
-                    break;
-                case 2:
 
+                    break;
+
+                case 2:
+                    System.out.println("Name: ");
+                    name = scanner.nextLine();
+
+                    System.out.println("Price: ");
+                    price = scanner.nextDouble();
+                    scanner.nextLine(); // przechwyca znak nowej linii \n
+
+                    System.out.println("Type: ");
+                    String type = scanner.nextLine();
+
+                    Car car = new Car(name, price, type);  //tworzę obiekt Car
+                    toyShop.addCar(car);
 
                     break;
                 case 3:
